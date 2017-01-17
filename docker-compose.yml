@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  intellij:
+    build: .
+    command: /opt/idea-IU-163.10154.41/bin/idea.sh
+    environment:
+      - DISPLAY=$DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME:/home/developer 
